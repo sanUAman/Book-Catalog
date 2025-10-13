@@ -24,28 +24,32 @@ public static class SeedData
                 Title = "The Watchtower",
                 ReleaseDate = DateTime.Parse("2020-03-15"),
                 Genre = "Novel",
-                Price = 7.72M
+                Price = 7.72M,
+                Rating = "A-"
             },
             new Book
             {
                 Title = "On the Edge",
                 ReleaseDate = DateTime.Parse("2018-09-27"),
                 Genre = "Drama",
-                Price = 5.06M
+                Price = 5.06M,
+                Rating = "B+"
             },
             new Book
             {
                 Title = "Ghosts of the Past",
                 ReleaseDate = DateTime.Parse("2022-07-03"),
                 Genre = "Thriller",
-                Price = 9.66M
+                Price = 9.66M,
+                Rating = "A"
             },
             new Book
             {
                 Title = "Programming Basics",
                 ReleaseDate = DateTime.Parse("2023-01-10"),
                 Genre = "Educational",
-                Price = 12.79M
+                Price = 12.79M,
+                Rating = "A+"
             }
             );
             context.SaveChanges();
