@@ -15,5 +15,18 @@ namespace RazorPagesBook.Data
         }
 
         public DbSet<RazorPagesBook.Models.Book> Book { get; set; } = default!;
+        public DbSet<Review> Reviews { get; set; } = default!;
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Review>()
+                .HasIndex(r => new { r.BookId, r.UserId })
+                .IsUnique();
+            modelBuilder.Entity<Review>()
+                .HasOne(r => r.Book)
+                .WithMany(m => m.Reviews)
+                .HasForeignKey(r => r.BookId)
+                .OnDelete(DeleteBehavior.Cascade);
+        }
     }
 }

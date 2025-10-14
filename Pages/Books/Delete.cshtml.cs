@@ -13,10 +13,12 @@ namespace RazorPagesBook.Pages.Books
     public class DeleteModel : PageModel
     {
         private readonly RazorPagesBook.Data.RazorPagesBookContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public DeleteModel(RazorPagesBook.Data.RazorPagesBookContext context)
+        public DeleteModel(RazorPagesBook.Data.RazorPagesBookContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         [BindProperty]

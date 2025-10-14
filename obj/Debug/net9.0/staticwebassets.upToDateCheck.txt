@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\placeholder-poster.svg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,6 +62,8 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\books\7\poster-dde626457efe4033a7c3123f2eb3b4a4.jpg
+wwwroot\uploads\books\9\poster-e6daa47e52c14e54b67d998d18bc530a.jpg
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\css\site.css
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\favicon.ico
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\js\site.js
@@ -123,3 +126,4 @@ C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\lib\jquery\dis
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\dziva\source\repos\RazorPagesBook\RazorPagesBook\wwwroot\images\placeholder-poster.svg
