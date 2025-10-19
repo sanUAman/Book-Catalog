@@ -2,22 +2,22 @@
 @model RazorPagesBook.Pages.Books.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Список фільмів";
 }
 
-<h1>Index</h1>
+<h1>Список фільмів</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Створити новий об'єкт</a>
 </p>
 
 <form>
     <p>
         <select asp-for="BookGenre" asp-items="Model.Genres">
-            <option value="">All</option>
+            <option value="">Повний список</option>
         </select>
-        <label>Title: <input type="text" asp-for="SearchString" /></label>
-        <input type="submit" value="Filter" />
+        <label>Назва: <input type="text" asp-for="SearchString" /></label>
+        <input type="submit" value="Фільтрувати" />
     </p>
 </form>
 
@@ -60,9 +60,9 @@
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Редагувати</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Деталі</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Видалити</a>
             </td>
         </tr>
 }

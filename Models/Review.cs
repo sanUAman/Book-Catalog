@@ -27,5 +27,13 @@ namespace RazorPagesBook.Models
         public DateTime? UpdatedAt { get; set; }
 
         public Book? Book { get; set; }
+
+        [StringLength(2000)]
+        public string? AdminReply { get; set; }
+
+        [StringLength(128)]
+        public string? AdminReplyBy { get; set; }
+
+        public DateTime? AdminRepliedAt { get; set; }
     }
 }

@@ -16,6 +16,8 @@ namespace RazorPagesBook.Data
 
         public DbSet<RazorPagesBook.Models.Book> Book { get; set; } = default!;
         public DbSet<Review> Reviews { get; set; } = default!;
+        public DbSet<Feedback> Feedbacks { get; set; } = default!;
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

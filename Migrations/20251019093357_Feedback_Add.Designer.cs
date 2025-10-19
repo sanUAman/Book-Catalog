@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesBook.Data;
 
@@ -11,9 +12,11 @@ using RazorPagesBook.Data;
 namespace RazorPagesBook.Migrations
 {
     [DbContext(typeof(RazorPagesBookContext))]
-    partial class RazorPagesBookContextModelSnapshot : ModelSnapshot
+    [Migration("20251019093357_Feedback_Add")]
+    partial class Feedback_Add
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,21 +69,6 @@ namespace RazorPagesBook.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("AdminRepliedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("AdminRepliedBy")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("AdminReplyBody")
-                        .HasMaxLength(4000)
-                        .HasColumnType("nvarchar(4000)");
-
-                    b.Property<string>("AdminReplySubject")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

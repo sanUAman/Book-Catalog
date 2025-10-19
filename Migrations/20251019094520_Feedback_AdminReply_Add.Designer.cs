@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesBook.Data;
 
@@ -11,9 +12,11 @@ using RazorPagesBook.Data;
 namespace RazorPagesBook.Migrations
 {
     [DbContext(typeof(RazorPagesBookContext))]
-    partial class RazorPagesBookContextModelSnapshot : ModelSnapshot
+    [Migration("20251019094520_Feedback_AdminReply_Add")]
+    partial class Feedback_AdminReply_Add
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

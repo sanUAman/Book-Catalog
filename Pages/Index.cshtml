@@ -1,10 +1,29 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Головна сторінка";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">BookReview Portal</h1>
+    <p class="lead mb-4" style="margin-bottom: 1.5rem !important;">
+        Ласкаво просимо до вашої персональної бібліотеки та платформи для обговорення книжок!
+    </p>
+    <p style="margin-bottom: 1.75rem;">
+        <strong>BookReview Portal</strong> — це зручна система для зберігання власної колекції книжок, перегляду детальної інформації, залишення відгуків та спілкування з іншими читачами.
+    </p>
+    <div class="d-flex justify-content-center">
+        <ul class="list-group mb-3" style="max-width: 800px; width: 100%;">
+            <p class="display-6">Новини:</p>
+            <li class="list-group-item">
+                Вийшла оновлена сторінка для відгуків — тепер ви можете відповідати на коментарі!
+            </li>
+            <li class="list-group-item">
+                Очікуйте нових рекомендацій від адміністратора наступного тижня.
+            </li>
+        </ul>
+    </div>
+    <p style="margin-top: 1.5rem">
+        Приєднуйтесь до обговорення та допоможіть іншим знайти цікаві книги!
+    </p>
 </div>

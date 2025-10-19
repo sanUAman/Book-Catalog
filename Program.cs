@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RazorPagesBook.Data;
 using RazorPagesBook.Models;
+using RazorPagesBook.Services;
 using RazorPagesMovie.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +33,12 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddRazorPages(options =>
 {
     options.Conventions.AuthorizeFolder("/Books", "RequireAdministratorRole");
+    options.Conventions.AuthorizeFolder("/Reviews", "RequireAdministratorRole");
+    options.Conventions.AuthorizeFolder("/Admin", "RequireAdministratorRole");
 });
+
+builder.Services.Configure<EmailOptions>(builder.Configuration.GetSection("Email"));
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
 
 var app = builder.Build();
 
